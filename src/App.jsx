@@ -9,7 +9,7 @@ function App() {
   const [answer, setAnswer] = useState("");
   const [generatingAnswer, setGeneratingAnswer] = useState(false);
 
-  const chatContainerRef = useRef(null);
+  const chatContainer Ref = useRef(null);
 
   useEffect(() => {
     if (chatContainerRef.current) {
@@ -30,7 +30,7 @@ function App() {
     
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyCSDaIEYxeFC-CiLa31KDrq0b793KWrSZ8{
           import.meta.env.VITE_API_GENERATIVE_LANGUAGE_CLIENT
         }`,
         method: "post",
